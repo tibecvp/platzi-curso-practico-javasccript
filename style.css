@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    padding: 2em;
+    /* border: 1px solid salmon; */
+    background-color: aliceblue;
+    margin-top: 1em;
+    display: grid;
+    align-content: center;
+}
+
+section h2 {
+    margin: 0 0 1em 0;
+}
+
+button {
+    border: 0;
+    background-color: salmon;
+    color: aliceblue;
+    font-weight: bolder;
+    padding: 1em;
+    border-radius: 0.3em;
+    margin: 1em 1em 0 0;
+}
+
+input {
+    color: darkslategray;
+    padding: 0.5em 1em;
+    margin: 0 1em;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    font-size: 1.1em;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+#ResultPrice {
+    display: none;
+}
