@@ -1,3 +1,5 @@
+let listaNumeros = [];
+
 function calcularMediaAritmetica(lista) {
     // let sumaLista = 0;
     // for (let i = 0; i < lista.length; i++) {
@@ -12,4 +14,30 @@ function calcularMediaAritmetica(lista) {
 
     const promedioLista = sumaLista / lista.length;
     return promedioLista;
+}
+
+function agregarNumero() {
+    const input = document.getElementById("InputNumero");
+    const value = input.value;
+    listaNumeros.push(parseInt(value));
+
+    mostrarLista();
+}
+
+function calcularPromedio() {
+    const promedio = calcularMediaAritmetica(listaNumeros);
+    const showResult = document.getElementById("ShowResult");
+    showResult.innerText = "EL PROMEDIO ES " + promedio;
+    showResult.style.display = "block";
+    showResult.style.fontWeight = "bolder";
+}
+
+function mostrarLista() {
+    const lista = document.getElementById("ulNumbersList");
+    /*Crea otro elemento dentro del elemento contenedor*/
+    var linew = document.createElement("li");
+    /*Imprime algo dentro del elemento 'li' "*/
+    var contenido = document.createTextNode(listaNumeros[listaNumeros.length - 1]);
+    lista.appendChild(linew);
+    linew.appendChild(contenido);
 }

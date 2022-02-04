@@ -15,7 +15,7 @@ function onClickButtonPriceDiscount() {
     const discountValue = inputDiscount.value;
 
     const precioConDescuento = (priceValue * (100 - discountValue)) / 100;
-    const resultPrice = document.getElementById("ResultPrice");
+    const resultPrice = document.getElementById("ShowResult");
     resultPrice.innerText = "El precio con descuento es: $" + precioConDescuento + " dolaretes";
     resultPrice.style.display = "block";
 }

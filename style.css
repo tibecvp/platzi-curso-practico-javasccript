@@ -13,7 +13,7 @@ header>div {
 }
 
 section {
-    padding: 0.5em 2em;
+    padding: 0 2em;
     /* border: 1px solid salmon; */
     background-color: aliceblue;
     margin-top: 1em;
@@ -71,7 +71,7 @@ a:hover {
     border-radius: 0.25rem;
 }
 
-#ResultPrice {
+#ShowResult {
     margin-top: 1em;
     display: none;
 }

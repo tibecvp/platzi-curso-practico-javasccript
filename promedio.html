@@ -58,6 +58,27 @@
         </div>
     </header>
 
+    <section>
+        <h2>Calcula el promedio de una lista de números</h2>
+        <form action="">
+            <label for="InputNumero">
+                Ingresa un número a la lista:
+            </label>
+            <input id="InputNumero" type="number" />
+            <button type="button" onclick="agregarNumero()">
+                Agregar
+            </button>
+            <button type="button" onclick="calcularPromedio()">
+                Calcular el promedio
+            </button>
+            <p class="alert alert-success" id="ShowResult"></p>
+            <h3>Lista de números:</h3>
+            <ul id="ulNumbersList">
+
+            </ul>
+        </form>
+    </section>
+
     <script src="./promedio.js"></script>
 </body>
 
