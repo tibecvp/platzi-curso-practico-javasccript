@@ -22,6 +22,7 @@ function agregarNumero() {
     listaNumeros.push(parseInt(value));
 
     mostrarLista();
+    document.getElementById("PrimaryButton").disabled = false;
 }
 
 function calcularPromedio() {
@@ -40,4 +41,8 @@ function mostrarLista() {
     var contenido = document.createTextNode(listaNumeros[listaNumeros.length - 1]);
     lista.appendChild(linew);
     linew.appendChild(contenido);
+}
+
+function limpiarLista() {
+    window.location.reload();
 }

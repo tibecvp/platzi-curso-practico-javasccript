@@ -65,10 +65,14 @@
                 Ingresa un número a la lista:
             </label>
             <input id="InputNumero" type="number" />
-            <button type="button" onclick="agregarNumero()">
-                Agregar
+            <button class="btn btn-dark" type="button" onclick="agregarNumero()">
+                Agregar Número
             </button>
-            <button type="button" onclick="calcularPromedio()">
+            <button class="btn btn-secondary" type="button" onclick="limpiarLista()">
+                Limpiar Lista
+            </button>
+            <br>
+            <button class="btn btn-primary btn-lg btn-block" id="PrimaryButton" type="button" onclick="calcularPromedio()" disabled>
                 Calcular el promedio
             </button>
             <p class="alert alert-success" id="ShowResult"></p>

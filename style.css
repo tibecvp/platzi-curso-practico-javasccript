@@ -29,20 +29,8 @@ section h2 {
     margin: 0 0 1em 0;
 }
 
-button {
-    border: 0;
-    background-color: salmon;
-    color: aliceblue;
-    font-weight: bolder;
-    padding: 1em;
-    border-radius: 0.3em;
-    margin: 1em 1em 0 0;
-}
-
-input {
-    color: darkslategray;
-    padding: 0.5em 1em;
-    margin: 0 1em;
+.btn-lg {
+    margin: 0.5em 0;
 }
 
 a {
