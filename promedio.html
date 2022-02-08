@@ -50,38 +50,42 @@
                 </div>
             </div>
         </nav>
+    </header>
+    <div class="page-content">
         <div>
             <h1>
                 Promedio
             </h1>
             <p>Este es el tercer taller del Curso Práctico de JavaScript.</p>
         </div>
-    </header>
+        <section>
+            <h2>Calcula el promedio de una lista de números</h2>
+            <div class="promedio-grid">
+                <div class="lista">
+                    <p>Lista de números:</p>
+                    <ul id="ulNumbersList">
 
-    <section>
-        <h2>Calcula el promedio de una lista de números</h2>
-        <form action="">
-            <label for="InputNumero">
-                Ingresa un número a la lista:
-            </label>
-            <input id="InputNumero" type="number" />
-            <button class="btn btn-dark" type="button" onclick="agregarNumero()">
-                Agregar Número
-            </button>
-            <button class="btn btn-secondary" type="button" onclick="limpiarLista()">
-                Limpiar Lista
-            </button>
-            <br>
-            <button class="btn btn-primary btn-lg btn-block" id="PrimaryButton" type="button" onclick="calcularPromedio()" disabled>
-                Calcular el promedio
-            </button>
-            <p class="alert alert-success" id="ShowResult"></p>
-            <h3>Lista de números:</h3>
-            <ul id="ulNumbersList">
-
-            </ul>
-        </form>
-    </section>
+                    </ul>
+                </div>
+                <form action="" class="form-group col-md-9" onkeydown="return event.key != 'Enter';">
+                    <label for="InputNumero">
+                        Ingresa un número a la lista:
+                    </label>
+                    <input id="InputNumero" type="number" class="form-control" />
+                    <button class="btn btn-dark btn-block" type="button" onclick="agregarNumero()">
+                        Agregar Número
+                    </button>
+                    <button class="btn btn-secondary btn-block" type="button" onclick="limpiarLista()">
+                        Limpiar Lista
+                    </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="PrimaryButton" type="button" onclick="calcularPromedio()" disabled>
+                        Calcular el promedio
+                    </button>
+                    <p class="alert alert-success" id="ShowResult"></p>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <script src="./promedio.js"></script>
 </body>

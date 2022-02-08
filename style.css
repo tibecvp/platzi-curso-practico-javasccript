@@ -1,36 +1,40 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
 }
 
 .github-icon {
-    /* width: 24px; */
     height: 24px;
     margin-right: 4px;
+}
+
+header {
+    width: 100%;
 }
 
 header>div {
     margin: 1em;
 }
 
+.page-content {
+    max-width: 1024px;
+}
+
+.page-content>div {
+    margin: 2em 1em;
+}
+
 section {
     padding: 0 2em;
-    /* border: 1px solid salmon; */
     background-color: aliceblue;
-    margin-top: 1em;
+    margin-top: 2em;
     display: grid;
-    align-content: center;
+    width: inherit;
 }
 
 section>a {
     padding: 1em;
-}
-
-section h2 {
-    margin: 0 0 1em 0;
-}
-
-.btn-lg {
-    margin: 0.5em 0;
 }
 
 a {
@@ -38,10 +42,34 @@ a {
     color: inherit;
 }
 
-a:hover {
+section>a:hover {
     text-decoration: none;
     color: white;
-    background-color: skyblue;
+    font-size: 18px;
+    background-color: salmon;
+}
+
+section h2 {
+    margin: 0 0 0.5em 0;
+}
+
+section form {
+    /* text-align: center; */
+    justify-self: center;
+}
+
+hr {
+    width: 100%;
+    border: 2px solid darkslategray;
+    margin: 2em 0 0.5em;
+}
+
+.form-control {
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    margin: 0.5em 0;
 }
 
 .alert-success {
@@ -57,6 +85,16 @@ a:hover {
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: 0.25rem;
+}
+
+.promedio-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.lista {
+    background-color: lightgoldenrodyellow;
+    padding: 0.5em;
 }
 
 #ShowResult {

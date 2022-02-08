@@ -1,5 +1,13 @@
 let listaNumeros = [];
 
+var input = document.getElementById("InputNumero");
+input.addEventListener("keyup", function(event) {
+    if (event.key == 'Enter') {
+        event.preventDefault();
+        agregarNumero();
+    }
+});
+
 function calcularMediaAritmetica(lista) {
     // let sumaLista = 0;
     // for (let i = 0; i < lista.length; i++) {
@@ -22,6 +30,7 @@ function agregarNumero() {
     listaNumeros.push(parseInt(value));
 
     mostrarLista();
+    input.value = '';
     document.getElementById("PrimaryButton").disabled = false;
 }
 
