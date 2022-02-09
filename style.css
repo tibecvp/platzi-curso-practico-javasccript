@@ -26,9 +26,9 @@ header>div {
 }
 
 section {
-    padding: 0 2em;
-    background-color: aliceblue;
-    margin-top: 2em;
+    padding: 1em 2em;
+    background-color: whitesmoke;
+    margin: 1em 0;
     display: grid;
     width: inherit;
 }
@@ -40,13 +40,30 @@ section>a {
 a {
     text-decoration: none;
     color: inherit;
+    border-radius: 5px;
 }
 
-section>a:hover {
+.modal-body a {
+    padding: 0.3em;
+    background-color: darksalmon;
+    color: white;
+    /* border: 3px solid salmon; */
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+}
+
+section a:hover {
     text-decoration: none;
     color: white;
     font-size: 18px;
     background-color: salmon;
+    border-color: salmon;
+}
+
+.modal-body a:hover {
+    font-size: 24px;
 }
 
 section h2 {
@@ -61,15 +78,32 @@ section form {
 hr {
     width: 100%;
     border: 2px solid darkslategray;
-    margin: 2em 0 0.5em;
+    margin: 2em 0;
 }
 
 .form-control {
     margin-bottom: 1.5em;
 }
 
-.btn {
+.btn-primary {
     margin: 0.5em 0;
+    background-color: darksalmon;
+    border-color: darksalmon;
+}
+
+.btn-primary:disabled {
+    background-color: lightsalmon;
+    border-color: lightsalmon;
+}
+
+.btn-primary:hover {
+    background-color: salmon;
+    border-color: salmon;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: tomato;
+    border-color: tomato;
 }
 
 .alert-success {
