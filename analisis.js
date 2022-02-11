@@ -1,3 +1,6 @@
+let salarios = [];
+let salariosSorted = [];
+
 // Helpers
 function esPar(numerito) {
     return (numerito % 2 === 0);
@@ -15,8 +18,20 @@ function calcularMediaAritmetica(lista) {
     return promedioLista;
 }
 
-// Calculadoa de mediana
-function medianaSalariosCol(lista) {
+function printResult(resultGral, resultTop10) {
+    const showResult = document.getElementById("ShowResult");
+    showResult.innerText =
+        "LA MEDIANA GENERAL ES " +
+        resultGral +
+        ". LA MEDIANA DEL TOP 10 ES " +
+        resultTop10 +
+        ".";
+    showResult.style.display = "block";
+    showResult.style.fontWeight = "bolder";
+}
+
+// Calculadora de mediana
+function medianaSalarios(lista) {
     const mitad = parseInt(lista.length / 2);
 
     if (esPar(lista.length)) {
@@ -31,32 +46,44 @@ function medianaSalariosCol(lista) {
     }
 }
 
+function calcularMediana() {
+    sacarSalarios();
+    const resultMedianaGral = calcularMedianaGral();
+    const resultMedianaTop10 = calcularMedianaTop10();
+    printResult(resultMedianaGral, resultMedianaTop10);
+}
+
 // Mediana General
-const salariosCol = colombia.map(
-    function(personita) {
-        return personita.salary;
-    }
-);
+function sacarSalarios() {
+    salarios = listaSalarios.map(
+        function(personita) {
+            return personita.salary;
+        }
+    );
 
-const salariosColSorted = salariosCol.sort(
-    function(salaryA, salaryB) {
-        return salaryA - salaryB;
-    }
-);
+    salariosSorted = salarios.sort(
+        function(salaryA, salaryB) {
+            return salaryA - salaryB;
+        }
+    );
+}
 
-const medianaGeneralCol = medianaSalariosCol(salariosColSorted);
+
+function calcularMedianaGral() {
+    const medianaGeneral = medianaSalarios(salariosSorted);
+    return medianaGeneral;
+}
+
 
 // Mediana del Top 10
-const spliceStart = (salariosColSorted.length * 90) / 100;
-const spliceCount = salariosColSorted.length - spliceStart;
-const salariosColTop10 = salariosColSorted.splice(
-    spliceStart,
-    spliceCount
-);
+function calcularMedianaTop10() {
+    const spliceStart = parseInt((salariosSorted.length * 90) / 100);
+    const spliceCount = parseInt(salariosSorted.length - spliceStart);
+    const salariosTop10 = salariosSorted.splice(
+        spliceStart,
+        spliceCount
+    );
 
-const medianaTop10Col = medianaSalariosCol(salariosColTop10);
-
-console.log({
-    medianaGeneralCol,
-    medianaTop10Col
-});
+    const medianaTop10 = medianaSalarios(salariosTop10);
+    return medianaTop10;
+}

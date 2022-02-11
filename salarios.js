@@ -1,101 +1,63 @@
-const colombia = [];
+let listaSalarios = [];
 
-colombia.push({
-    name: "Juanita",
-    salary: 1000
-});
+disableSubmit();
 
-colombia.push({
-    name: "Natalia",
-    salary: 1500
-});
+function disableSubmit() {
+    var input = document.getElementById("InputName");
+    input.addEventListener("keyup", function(event) {
+        if (event.key == 'Enter') {
+            event.preventDefault();
+            agregarSalario();
+        }
+    });
 
-colombia.push({
-    name: "Andrés",
-    salary: 4000
-});
+    var input = document.getElementById("InputSalary");
+    input.addEventListener("keyup", function(event) {
+        if (event.key == 'Enter') {
+            event.preventDefault();
+            agregarSalario();
+        }
+    });
+}
 
-colombia.push({
-    name: "Dayana",
-    salary: 3500
-});
+function agregarSalario() {
+    const inputName = document.getElementById("InputName");
+    const valueName = inputName.value;
+    const inputSalary = document.getElementById("InputSalary");
+    const valueSalary = inputSalary.value;
+    if (valueName != "" && valueSalary != "") {
+        listaSalarios.push({
+            name: valueName,
+            salary: parseInt(valueSalary)
+        });
+        mostrarLista();
+        inputName.value = '';
+        inputSalary.value = '';
+        inputName.focus();
+        document.getElementById("PrimaryButton").disabled = false;
+    }
+}
 
-colombia.push({
-    name: "Gustavo",
-    salary: 3500
-});
+function mostrarLista() {
+    // MOSTRAR NOMBRE EN LA LISTA
+    const listaName = document.getElementById("ulNameList");
+    /*Crea otro elemento dentro del elemento contenedor*/
+    var linewName = document.createElement("li");
+    /*Imprime algo dentro del elemento 'li' "*/
+    var contenidoName = document.createTextNode(listaSalarios[listaSalarios.length - 1].name);
+    listaName.appendChild(linewName);
+    linewName.appendChild(contenidoName);
 
-colombia.push({
-    name: "Lucho",
-    salary: 4000
-});
+    // MOSTRAR SALARIO EN LA LISTA
+    const listaSalaryFront = document.getElementById("ulSalaryList");
+    /*Crea otro elemento dentro del elemento contenedor*/
+    var linewSalaryFront = document.createElement("li");
+    /*Imprime algo dentro del elemento 'li' "*/
+    var contenidoSalaryFront = document.createTextNode(listaSalarios[listaSalarios.length - 1].salary);
+    listaSalaryFront.appendChild(linewSalaryFront);
+    linewSalaryFront.appendChild(contenidoSalaryFront);
+}
 
-colombia.push({
-    name: "Candy",
-    salary: 1800
-});
-
-colombia.push({
-    name: "Jair",
-    salary: 14000
-});
-
-colombia.push({
-    name: "Daniel",
-    salary: 5000
-});
-
-colombia.push({
-    name: "Wilfer",
-    salary: 6000
-});
-
-colombia.push({
-    name: "Ferney",
-    salary: 3000
-});
-
-colombia.push({
-    name: "Mauricio",
-    salary: 3000
-});
-
-colombia.push({
-    name: "Sergio",
-    salary: 2400
-});
-
-colombia.push({
-    name: "Santiago",
-    salary: 10000
-});
-
-colombia.push({
-    name: "Ronald",
-    salary: 1000
-});
-
-colombia.push({
-    name: "Angelica",
-    salary: 4500
-});
-
-colombia.push({
-    name: "Julian",
-    salary: 1400
-});
-
-colombia.push({
-    name: "Janisse",
-    salary: 5000
-});
-
-colombia.push({
-    name: "Catalina",
-    salary: 7000
-});
-
-colombia.push({
-    name: "Keilly",
-    salary: 7000
-});
+function limpiarLista() {
+    window.location.reload();
+}

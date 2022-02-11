@@ -18,7 +18,7 @@
                 <img class="github-icon" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_gray-512.png" alt="">Tibecvp
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarColor01">
@@ -51,9 +51,60 @@
             </div>
         </nav>
     </header>
-    <h1>
-        Salarios
-    </h1>
+    <div class="page-content">
+        <div>
+            <h1>
+                Salarios
+            </h1>
+            <p>
+                Este es el cuarto taller del Curso Práctico de JavaScript.
+                <br> <br> En esta página podrás crear un listado de salarios de diferentes personas y calcular la mediana correspondiente al salario de dicha lista y la mediana del top 10% de los salarios de la lista.
+            </p>
+        </div>
+        <section>
+            <h2>Calcula la mediana de los salarios y la mediana del Top 10 de los mismos.</h2>
+            <div class="promedio-grid">
+                <div class="lista">
+                    <p>Nombre:</p>
+                    <ul id="ulNameList">
+
+                    </ul>
+                </div>
+                <div class="lista">
+                    <p>Salario:</p>
+                    <ul id="ulSalaryList">
+
+                    </ul>
+                </div>
+                <form action="" class="form-group col-md-9" onkeydown="return event.key != 'Enter';">
+                    <div class="row">
+                        <div class="col">
+                            <label for="InputName" class="">
+                                Nombre:
+                            </label>
+                            <input id="InputName" type="text" class="form-control" />
+                        </div>
+                        <div class="col">
+                            <label for="InputSalary">
+                                Salario:
+                            </label>
+                            <input id="InputSalary" type="number" class="form-control" />
+                        </div>
+                    </div>
+                    <button class="btn btn-dark btn-block" type="button" onclick="agregarSalario()">
+                            Agregar Salario
+                        </button>
+                    <button class="btn btn-secondary btn-block" type="button" onclick="limpiarLista()">
+                            Limpiar Lista
+                        </button>
+                    <button class="btn btn-primary btn-lg btn-block" id="PrimaryButton" type="button" onclick="calcularMediana()" disabled>
+                        Calcular la mediana general y del Top10
+                    </button>
+                    <p class="alert alert-success" id="ShowResult"></p>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <script src="./salarios.js"></script>
     <script src="./analisis.js"></script>

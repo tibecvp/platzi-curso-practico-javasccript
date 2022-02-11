@@ -68,6 +68,7 @@ section a:hover {
 
 section h2 {
     margin: 0 0 0.5em 0;
+    min-width: 640px;
 }
 
 section form {
@@ -129,6 +130,19 @@ hr {
 .lista {
     background-color: lightgoldenrodyellow;
     padding: 0.5em;
+    width: 260px;
+}
+
+.lista p {
+    font-weight: bolder;
+}
+
+.lista li {
+    list-style: none;
+}
+
+#ulSalaryList {
+    text-align: end;
 }
 
 #ShowResult {
