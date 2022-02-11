@@ -21,10 +21,6 @@ header>div {
     max-width: 1024px;
 }
 
-.page-content>div {
-    margin: 2em 1em;
-}
-
 section {
     padding: 1em 2em;
     background-color: whitesmoke;
@@ -35,6 +31,42 @@ section {
 
 section>a {
     padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+section>a>img {
+    width: 160px;
+    height: 160px;
+    margin-right: 2em;
+}
+
+.headerPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #212529;
+    color: white;
+    padding: 1em 2em;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.textoHeader>h1 {
+    margin-bottom: 1em;
+}
+
+.iconContainer {
+    margin-left: 2em;
+}
+
+.icon {
+    width: 250px;
+    height: 250px;
+}
+
+.modal-body {
+    text-align: center;
 }
 
 a {
@@ -139,6 +171,10 @@ hr {
 
 .lista li {
     list-style: none;
+}
+
+.textoLinks ul {
+    margin-bottom: 0;
 }
 
 #ulSalaryList {
