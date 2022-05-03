@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg2755"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="new_logo2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2757"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     showguides="false"
+     inkscape:zoom="1.7460937"
+     inkscape:cx="255.71365"
+     inkscape:cy="258.29083"
+     inkscape:window-width="1792"
+     inkscape:window-height="1120"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2752" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path3579"
+       style="fill:#ffd437;stroke-width:2.52829"
+       inkscape:transform-center-x="-1.7745833e-06"
+       inkscape:transform-center-y="-1.8138334e-05"
+       d="M 410.57031 0.033203125 C 278.57597 1.2907444 38.47697 39.00594 21.033203 67.472656 C -2.2251528 105.42828 -12.510991 460.43851 23.865234 488.79883 C 60.241486 517.15912 447.11357 524.52141 479.88672 482.16016 C 512.65987 439.79893 525.17788 50.122725 494.2793 12.621094 C 486.55465 3.2456798 454.56843 -0.38597731 410.57031 0.033203125 z M 250.33984 79.033203 A 195.93255 183.26621 0 0 1 446.27148 262.29883 A 195.93255 183.26621 0 0 1 250.33984 445.56641 A 195.93255 183.26621 0 0 1 54.40625 262.29883 A 195.93255 183.26621 0 0 1 250.33984 79.033203 z "
+       transform="scale(0.26458333)" />
+  </g>
+</svg>
